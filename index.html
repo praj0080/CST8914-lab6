@@ -66,47 +66,58 @@
 </head>
 <body>
     <div class="container">
-        <section class="content-box">
+        <header>
+            <h1>Hi/Max Real Estate & Houses</h1>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#why-choose">Why Choose Hi/Max</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="content-box" id="content-a">
             <h2>Hi/Max Real Estate & Houses</h2>
             <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make...</p>
             <a href="#">Let's get started</a>
         </section>
         
         <div class="content-grid">
-            <section class="content-box">
+            <section class="content-box" id="content-c">
                 <h2>Why Choosing HI/Max</h2>
                 <p>Hi/Max agents go above and beyond and always strive to be the best they can be...</p>
                 <table>
                     <caption>Stats of HI/Max</caption>
                     <thead>
                         <tr>
-                            <th>Year</th>
-                            <th>Quebec</th>
-                            <th>Ontario</th>
-                            <th>Single house</th>
-                            <th>Condo</th>
+                            <th id="year">Year</th>
+                            <th id="quebec">Quebec</th>
+                            <th id="ontario">Ontario</th>
+                            <th id="single">Single house</th>
+                            <th id="condo">Condo</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>2021</td>
-                            <td>50</td>
-                            <td>100</td>
-                            <td>$500,000</td>
-                            <td>$189,000</td>
+                            <td headers="year">2021</td>
+                            <td headers="quebec">50</td>
+                            <td headers="ontario">100</td>
+                            <td headers="single">$500,000</td>
+                            <td headers="condo">$189,000</td>
                         </tr>
                         <tr>
-                            <td>2022</td>
-                            <td>100</td>
-                            <td>200</td>
-                            <td>$780,000</td>
-                            <td>$240,000</td>
+                            <td headers="year">2022</td>
+                            <td headers="quebec">100</td>
+                            <td headers="ontario">200</td>
+                            <td headers="single">$780,000</td>
+                            <td headers="condo">$240,000</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
             
-            <aside class="content-box">
+            <aside class="content-box" id="content-b">
                 <h2>Related Resources</h2>
                 <ul>
                     <li><a href="#">Looking for an upgrade?</a></li>
@@ -118,17 +129,17 @@
         
         <h2>More Resources on How to Choose the Right Agent</h2>
         <div class="resources">
-            <div class="resource-box">
+            <div class="resource-box" id="content-f">
                 <img src="1.png" alt="For Sale Sign">
                 <h3><a href="#">What Are The Risks of Selling a Home Yourself?</a></h3>
                 <p>We’ve all seen the videos, read the stories...</p>
             </div>
-            <div class="resource-box">
+            <div class="resource-box" id="content-g">
                 <img src="2.png" alt="Agent Consulting Client">
                 <h3><a href="#">7 Questions to Ask a Real Estate Agent</a></h3>
                 <p>According to research by the National Association of Realtors...</p>
             </div>
-            <div class="resource-box">
+            <div class="resource-box" id="content-h">
                 <img src="3.png" alt="House for Sale Sign">
                 <h3><a href="#">8 Reasons to Hire an Agent When Selling Your Home</a></h3>
                 <p>With all the many different moving parts involved...</p>
@@ -138,6 +149,13 @@
     
     <footer>
         <p>&copy; 2024 Hi/Max Real Estate</p>
+        <nav aria-label="Footer Navigation">
+            <a href="#" aria-label="Follow us on Twitter">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" fill="blue"/>
+                </svg>
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
