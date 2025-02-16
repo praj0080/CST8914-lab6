@@ -61,7 +61,7 @@
 <body>
     <header>
         <h1>Hi/Max Real Estate & Houses</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#why-choose">Why Choose Hi/Max</a></li>
                 <li><a href="#stats">Stats</a></li>
@@ -71,69 +71,77 @@
     </header>
 
     <main>
-        <section id="question1">
-            <h2>Question 1 - Fix the Semantic Markup</h2>
+        <section id="question1" aria-labelledby="q1-title">
+            <h2 id="q1-title">Question 1 - Fix the Semantic Markup</h2>
             <p>The page has been improved with semantic elements and best practices.</p>
             <ul>
                 <li>Descriptive page title added.</li>
                 <li>Page language set to English (`lang="en"`).</li>
-                <li>Proper use of navigation without duplicate ARIA roles.</li>
+                <li>Unique labels for page regions and ARIA landmarks.</li>
                 <li>Improved accessibility of the Twitter SVG icon.</li>
             </ul>
         </section>
 
-        <section id="why-choose">
-            <h2>Why Choosing HI/Max</h2>
-            <p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is extremely community-focused, and our agents are too!</p>
-        </section>
-
-        <section id="stats">
-            <h2>Stats of HI/Max</h2>
-            <table>
-                <caption>Yearly real estate sales data</caption>
-                <thead>
-                    <tr>
-                        <th>Year</th>
-                        <th>Sold Properties</th>
-                        <th>Average Selling Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2021</td>
-                        <td>50</td>
-                        <td>$500,000</td>
-                    </tr>
-                    <tr>
-                        <td>2022</td>
-                        <td>100</td>
-                        <td>$780,000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="resources">
-            <h2>More Resources</h2>
-            <article>
-                <h3>How to Choose the Right Agent</h3>
-                <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project that would have been better left to the professionals.</p>
-                <a href="#">Read more</a>
-            </article>
-            <article>
-                <h3>7 Questions to Ask a Real Estate Agent</h3>
-                <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent.</p>
-            </article>
-            <article>
-                <h3>8 Reasons to Hire an Agent When Selling Your Home</h3>
-                <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent on speed dial.</p>
-            </article>
+        <section id="question2" aria-labelledby="q2-title">
+            <h2 id="q2-title">Question 2 - Markup a Semantic HTML Page</h2>
+            <section id="content-a">
+                <h2>Hi/Max Real Estate & Houses</h2>
+                <p>Buying or selling a home is likely the largest and most important transaction you’ll ever make...</p>
+            </section>
+            
+            <section id="why-choose">
+                <h2>Why Choosing HI/Max</h2>
+                <p>Hi/Max agents go above and beyond and always strive to be the best they can be...</p>
+            </section>
+            
+            <section id="stats">
+                <h2>Stats of HI/Max</h2>
+                <table>
+                    <caption>Yearly real estate sales data</caption>
+                    <thead>
+                        <tr>
+                            <th id="year">Year</th>
+                            <th id="sold">Sold Properties</th>
+                            <th id="price">Average Selling Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td headers="year">2021</td>
+                            <td headers="sold">50</td>
+                            <td headers="price">$500,000</td>
+                        </tr>
+                        <tr>
+                            <td headers="year">2022</td>
+                            <td headers="sold">100</td>
+                            <td headers="price">$780,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="resources">
+                <h2>More Resources</h2>
+                <article>
+                    <h3>How to Choose the Right Agent</h3>
+                    <p>We’ve all seen the videos, read the stories, and gasped at the images of people who thought they could conquer a project...</p>
+                    <a href="#">Read more</a>
+                </article>
+                <article>
+                    <h3>7 Questions to Ask a Real Estate Agent</h3>
+                    <p>According to research by the National Association of Realtors, there are considerable benefits to working with a real estate agent.</p>
+                </article>
+                <article>
+                    <h3>8 Reasons to Hire an Agent When Selling Your Home</h3>
+                    <p>With all the many different moving parts involved in selling your home, here are eight very valid reasons to have a real estate agent...</p>
+                </article>
+            </section>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Hi/Max Real Estate</p>
-        <nav>
+        <nav aria-label="Footer Navigation">
             <a href="#" aria-label="Follow us on Twitter">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="10" fill="blue"/>
